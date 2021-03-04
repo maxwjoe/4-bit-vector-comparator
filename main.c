@@ -71,7 +71,7 @@ uint8_t logic_four_AND(uint8_t a, uint8_t b, uint8_t c, uint8_t d) {
 	return 0b00000001 & (a & b & c & d);
 }
 
-//Implementing 2 Bit Comparator Using Only Logic Gates -> Truth Table reduces to expression = (~A)B + A(~B) -> ~XOR
+//Implementing 2 Bit Comparator Using Only Logic Gates -> Inverted Truth Table reduces to expression = (~A)B + A(~B) -> XOR -> Invert again ~XOR
 		//MUST IMPLEMENT WITH NAND, AND, OR -> CANNOT USE XOR
 uint8_t two_bit_comparator(uint8_t a, uint8_t b) {
 	uint8_t bit_a = 0b00000001 & a;
